@@ -4,6 +4,8 @@ package leet.code.problem0010;
  * 无重复字符的最长子串
  * <p>
  * 无重复最长子串 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+ *
+ * @author wbxing
  */
 public class Problem03 {
     public static void main(String[] args) {

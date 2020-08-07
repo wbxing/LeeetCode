@@ -6,6 +6,8 @@ import java.util.Stack;
  * 有效的括号
  * <p>
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
+ *
+ * @author wbxing
  */
 public class Problem20 {
     public static void main(String[] args) {

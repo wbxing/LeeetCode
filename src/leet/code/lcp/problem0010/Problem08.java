@@ -14,7 +14,8 @@ import java.util.Arrays;
  * r[i] 且 H >= h[i] ，则剧情会被触发。
  * <p>
  * 根据所给信息，请计算每个剧情的触发时间，并以一个数组返回。如 果某个剧情不会被触发，则该剧情对应的触发时间为 -1 。
- * <p>
+ *
+ * @author wbxing
  */
 public class Problem08 {
 
