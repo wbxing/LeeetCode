@@ -1,6 +1,5 @@
 package leet.code.problem0020;
 
-import java.util.List;
 import java.util.Stack;
 
 /**
