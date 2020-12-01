@@ -3,7 +3,7 @@ package leet.code.problem0980;
 import java.util.Arrays;
 
 /**
- * 976. 三角形的最大周长
+ * 976.三角形的最大周长
  *
  * @author wbxing
  * @date 2020/11/29
