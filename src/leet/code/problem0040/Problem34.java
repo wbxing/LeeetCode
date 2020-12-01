@@ -3,7 +3,7 @@ package leet.code.problem0040;
 import java.util.Arrays;
 
 /**
- * 34. 在排序数组中查找元素的第一个和最后一个位置
+ * 34.在排序数组中查找元素的第一个和最后一个位置
  *
  * @author wbxing
  * @date 2020/12/01
