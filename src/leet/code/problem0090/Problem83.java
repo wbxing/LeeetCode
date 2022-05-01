@@ -1,5 +1,7 @@
 package leet.code.problem0090;
 
+import leet.code.tools.ListNode;
+
 /**
  * 83. 删除排序链表中的重复元素
  * <p>
@@ -66,13 +68,4 @@ public class Problem83 {
         return res;
     }
 
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
 }

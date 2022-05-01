@@ -1,5 +1,6 @@
 package leet.code.problem0790;
 
+import leet.code.tools.TreeNode;
 /**
  * 783. 二叉搜索树节点最小距离
  *
@@ -28,14 +29,4 @@ public class Problem783 {
         traversal(root.right);
     }
 
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
 }

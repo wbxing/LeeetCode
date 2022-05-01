@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
+import leet.code.tools.TreeNode;
+
 /**
  * 637. 二叉树的层平均值
  *
@@ -46,12 +48,3 @@ public class Problem637 {
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}

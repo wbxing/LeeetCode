@@ -1,5 +1,6 @@
 package leet.code.problem0110;
 
+import leet.code.tools.TreeNode;
 
 /**
  * 101. 对称二叉树
@@ -41,12 +42,3 @@ public class Problem101 {
 
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}

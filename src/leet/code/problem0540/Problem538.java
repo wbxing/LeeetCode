@@ -3,6 +3,8 @@ package leet.code.problem0540;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
+import leet.code.tools.TreeNode;
+
 /**
  * 538. 把二叉搜索树转换为累加树
  *
@@ -53,12 +55,3 @@ public class Problem538 {
 
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}

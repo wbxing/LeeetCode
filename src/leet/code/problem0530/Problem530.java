@@ -1,5 +1,6 @@
 package leet.code.problem0530;
 
+import leet.code.tools.TreeNode;
 
 /**
  * 530. 二叉搜索树的最小绝对差
@@ -28,13 +29,4 @@ public class Problem530 {
 
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
 

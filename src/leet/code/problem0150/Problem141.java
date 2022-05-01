@@ -1,5 +1,7 @@
 package leet.code.problem0150;
 
+import leet.code.tools.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -40,12 +42,3 @@ public class Problem141 {
     }
 }
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
-    }
-}

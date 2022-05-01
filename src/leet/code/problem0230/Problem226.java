@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
+import leet.code.tools.TreeNode;
+
 /**
  * 226. 翻转二叉树
  *
@@ -63,14 +65,4 @@ public class Problem226 {
         System.out.println(lists);
     }
 
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
 }
