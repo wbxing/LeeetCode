@@ -1,5 +1,7 @@
 package leet.code.problem0030;
 
+import leet.code.tools.ListNode;
+
 /**
  * 23. 合并K个升序链表
  *
