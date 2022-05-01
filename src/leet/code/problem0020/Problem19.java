@@ -1,5 +1,7 @@
 package leet.code.problem0020;
 
+import leet.code.tools.ListNode;
+
 /**
  * 19. 删除链表的倒数第N个节点
  * <p>
@@ -13,6 +15,7 @@ public class Problem19 {
         Problem19 problem19 = new Problem19();
 
         ListNode l1 = new ListNode(1);
+//        ListNode l2 = new ListNode(1);
         ListNode tmp = l1;
         tmp.next = new ListNode(2);
         tmp = tmp.next;
@@ -22,7 +25,7 @@ public class Problem19 {
         tmp = tmp.next;
         tmp.next = new ListNode(5);
 
-        ListNode listNode = problem19.removeNthFromEnd(l1, 51);
+        ListNode listNode = problem19.removeNthFromEnd(l1, 0);
         while (listNode != null) {
             System.out.print(listNode.val);
             if (listNode.next != null) {
@@ -60,15 +63,5 @@ public class Problem19 {
         }
         p2.next = p2.next.next;
         return res;
-    }
-
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
     }
 }
