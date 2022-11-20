@@ -1,5 +1,7 @@
 package leet.code.problem0030;
 
+import leet.code.tools.ListNode;
+
 /**
  * 25. K 个一组翻转链表
  *

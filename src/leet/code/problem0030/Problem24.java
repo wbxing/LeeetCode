@@ -1,5 +1,7 @@
 package leet.code.problem0030;
 
+import leet.code.tools.ListNode;
+
 /**
  * 24. 两两交换链表中的节点
  *
