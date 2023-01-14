@@ -25,15 +25,19 @@ public class Problem19 {
                     f[i][j] = i == 0;
                 } else {
                     if (strB.charAt(j - 1) != '*') {
-                        if (i > 0 && (strA.charAt(i - 1) == strB.charAt(j - 1) || strB.charAt(j - 1) == '.')) {
-                            f[i][j] = f[i - 1][j - 1];
+                        if (i > 0 ) {
+                            if(strA.charAt(i - 1) == strB.charAt(j - 1) || strB.charAt(j - 1) == '.') {
+                                f[i][j] = f[i - 1][j - 1];
+                            }
                         }
                     } else {
                         if (j >= 2) {
                             f[i][j] |= f[i][j - 2];
                         }
-                        if (i >= 1 && j >= 2 && (strA.charAt(i - 1) == strB.charAt(j - 2) || strB.charAt(j - 2) == '.')) {
-                            f[i][j] |= f[i - 1][j];
+                        if ( i >= 1 && j >= 2 ) {
+                            if ( strA.charAt(i - 1) == strB.charAt(j - 2) || strB.charAt(j - 2) == '.') {
+                                f[i][j] |= f[i - 1][j];
+                            }
                         }
                     }
                 }
