@@ -1,4 +1,4 @@
-package leet.code.interview.offer.problem010.problem020;
+package leet.code.interview.offer.problem020;
 
 /**
  * 剑指 Offer 19. 正则表达式匹配
@@ -10,13 +10,13 @@ public class Problem19 {
 
     public static void main(String[] args) {
         Problem19 problem19 = new Problem19();
-        System.out.println(problem19.isMatch("aa", "a"));
+        System.out.println(problem19.isMatch("aa", "a*"));
 
     }
 
-    public boolean isMatch(String A, String B) {
-        int lenA = A.length();
-        int lenB = B.length();
+    public boolean isMatch(String strA, String strB) {
+        int lenA = strA.length();
+        int lenB = strB.length();
         boolean[][] f = new boolean[lenA + 1][lenB + 1];
 
         for (int i = 0; i <= lenA; i++) {
@@ -24,15 +24,15 @@ public class Problem19 {
                 if (j == 0) {
                     f[i][j] = i == 0;
                 } else {
-                    if (B.charAt(j - 1) != '*') {
-                        if (i > 0 && (A.charAt(i - 1) == B.charAt(j - 1) || B.charAt(j - 1) == '.')) {
+                    if (strB.charAt(j - 1) != '*') {
+                        if (i > 0 && (strA.charAt(i - 1) == strB.charAt(j - 1) || strB.charAt(j - 1) == '.')) {
                             f[i][j] = f[i - 1][j - 1];
                         }
                     } else {
                         if (j >= 2) {
                             f[i][j] |= f[i][j - 2];
                         }
-                        if (i >= 1 && j >= 2 && (A.charAt(i - 1) == B.charAt(j - 2) || B.charAt(j - 2) == '.')) {
+                        if (i >= 1 && j >= 2 && (strA.charAt(i - 1) == strB.charAt(j - 2) || strB.charAt(j - 2) == '.')) {
                             f[i][j] |= f[i - 1][j];
                         }
                     }
