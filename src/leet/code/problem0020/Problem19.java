@@ -17,12 +17,12 @@ public class Problem19 {
         ListNode l1 = new ListNode(1);
 //        ListNode l2 = new ListNode(1);
         ListNode tmp = l1;
-        tmp.next = new ListNode(2);
-        tmp = tmp.next;
-        tmp.next = new ListNode(3);
-        tmp = tmp.next;
-        tmp.next = new ListNode(4);
-        tmp = tmp.next;
+        int i = 2;
+        for (; i < 5; i++) {
+            tmp.next = new ListNode(i);
+            tmp = tmp.next;
+        }
+
         tmp.next = new ListNode(5);
 
         ListNode listNode = problem19.removeNthFromEnd(l1, 0);
@@ -33,7 +33,6 @@ public class Problem19 {
             }
             listNode = listNode.next;
         }
-
     }
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
